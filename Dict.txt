@@ -1,0 +1,17 @@
+an: một
+name: tên
+fifteen: mười lăm
+fifty: năm mươi
+bag: cái cặp
+book: quyển sách
+box: cái hộp
+cat: con mèo
+close: đóng
+computer: máy tính
+dog: con chó
+mouse: con chuột
+smartphone: điện thoại thông minh
+snow: tuyết
+win: chiến thắng
+window: cửa sổ
+water: nước

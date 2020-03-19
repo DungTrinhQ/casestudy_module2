@@ -5,13 +5,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Dictionary {
-    private Word head;
+    private Node head;
 
     public Dictionary() {
         head = null;
     }
 
-    public void loadDictionaryFromFile(String fileName) {
+    public void loadDict(String fileName) {
         BufferedReader bufferedReader = null;
         try {
             String word;
@@ -23,15 +23,15 @@ public class Dictionary {
                 word = currentLine.substring(0, index);
                 mean = currentLine.substring(index + 2,
                         currentLine.length());
-                Word node = new Word(word, mean);
+                Node node = new Node(word, mean);
                 if (head == null) {
                     head = node;
                 } else {
-                    Word currentWord = head;
-                    while (currentWord.next != null) {
-                        currentWord = currentWord.next;
+                    Node currentNode = head;
+                    while (currentNode.next != null) {
+                        currentNode = currentNode.next;
                     }
-                    currentWord.next = node;
+                    currentNode.next = node;
                 }
             }
         } catch (IOException e) {
@@ -48,63 +48,63 @@ public class Dictionary {
     }
 
     public void add(String word, String mean) {
-        Word newWord = new Word(word, mean);
+        Node newNode = new Node(word, mean);
         if (head == null) {
-            head = newWord;
+            head = newNode;
             return;
         }
         if (head.word.compareTo(word) > 0) {
-            newWord.next = head;
-            head = newWord;
+            newNode.next = head;
+            head = newNode;
             return;
         }
-        Word currentWord = head;
-        while (currentWord.next != null) {
-            if (currentWord.word.equals(word)) {
-                if (currentWord.mean.indexOf(mean) < 0)
-                    currentWord.concatMean(mean);
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            if (currentNode.word.equals(word)) {
+                if (currentNode.mean.indexOf(mean) < 0)
+                    currentNode.concatMean(mean);
                 else
-                    System.out.println("Word and meanings already exists!");
+                    System.out.println("Từ và nghĩa đã tồn tại!");
                 return;
             }
-            if (currentWord.next.word.compareTo(word) > 0) {
-                newWord.next = currentWord.next;
-                currentWord.next = newWord;
+            if (currentNode.next.word.compareTo(word) > 0) {
+                newNode.next = currentNode.next;
+                currentNode.next = newNode;
                 return;
             }
-            currentWord = currentWord.next;
+            currentNode = currentNode.next;
         }
-        if (currentWord.word.equals(word)) {
-            if (currentWord.mean.indexOf(mean) < 0)
-                currentWord.concatMean(mean);
+        if (currentNode.word.equals(word)) {
+            if (currentNode.mean.indexOf(mean) < 0)
+                currentNode.concatMean(mean);
             else
-                System.out.println("Word and meanings already exists!");
+                System.out.println("Từ và nghĩa đã tồn tại!");
             return;
         }
-        currentWord.next = newWord;
+        currentNode.next = newNode;
         return;
     }
 
     public void tranSlate(String word) {
         if (head == null) {
-            System.out.println("Dictionary is empty!");
+            System.out.println("Từ điển trống!");
             return;
         }
-        Word currentWord = head;
-        while (currentWord != null) {
-            if (currentWord.word.equals(word)) {
-                System.out.println(currentWord.mean);
+        Node currentNode = head;
+        while (currentNode != null) {
+            if (currentNode.word.equals(word)) {
+                System.out.println(currentNode.mean);
                 return;
             }
-            currentWord = currentWord.next;
+            currentNode = currentNode.next;
         }
-        System.out.println("Not found!");
+        System.out.println("Không tìm thấy!");
         return;
     }
 
     public void delete(String word) {
         if (head == null) {
-            System.out.println("Dictionary is empty!");
+            System.out.println("Từ điển trống!");
             return;
         }
         if (head.word.equals(word)) {
@@ -113,24 +113,24 @@ public class Dictionary {
             } else {
                 head = head.next;
             }
-            System.out.println(word + " deleted!");
+            System.out.println(word + " đã xóa!");
             return;
         }
-        Word currentWord = head;
-        while (currentWord.next != null) {
-            if (currentWord.next.word.equals(word)) {
-                currentWord.next = currentWord.next.next;
-                System.out.println(word + " deleted!");
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            if (currentNode.next.word.equals(word)) {
+                currentNode.next = currentNode.next.next;
+                System.out.println(word + " đã xóa!");
                 return;
             }
-            currentWord = currentWord.next;
+            currentNode = currentNode.next;
         }
-        if (currentWord.word.equals(word)) {
-            currentWord = null;
-            System.out.println(word + " deleted!");
+        if (currentNode.word.equals(word)) {
+            currentNode = null;
+            System.out.println(word + " đã xóa!");
             return;
         }
-        System.out.println("Not found!");
+        System.out.println("Không tìm thấy!");
         return;
     }
 
@@ -139,15 +139,15 @@ public class Dictionary {
         try {
             bufferedWriter = new BufferedWriter(new FileWriter(fileName));
             if (head == null) {
-                System.out.println("Dictionary is empty!");
+                System.out.println("Từ điển trống!");
                 return;
             }
-            Word currentWord = head;
-            while (currentWord.next != null) {
-                bufferedWriter.write(currentWord.toString() + "\n");
-                currentWord = currentWord.next;
+            Node currentNode = head;
+            while (currentNode.next != null) {
+                bufferedWriter.write(currentNode.toString() + "\n");
+                currentNode = currentNode.next;
             }
-            bufferedWriter.write(currentWord.toString());
+            bufferedWriter.write(currentNode.toString());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -162,11 +162,13 @@ public class Dictionary {
     }
 
     public void use() {
-        System.out.println("> add <word>: <mean>");
-        System.out.println("> translate <word>");
-        System.out.println("> delete <word>");
-        System.out.println("> save");
-        System.out.println("> quit");
+        System.out.println("TỪ ĐIỂN ANH-ĐÔNG LÀO");
+        System.out.println("====================");
+        System.out.println("Menu:");
+        System.out.println("1. Dịch");
+        System.out.println("2. Thêm từ");
+        System.out.println("3. Xóa từ");
+        System.out.println("4. Thoát");
     }
 
 }

@@ -1,9 +1,10 @@
-public class Word {
+
+public class Node {
     public String word;
     public String mean;
-    public Word next;
+    public Node next;
 
-    public Word(String word, String mean) {
+    public Node(String word, String mean) {
         this.word = word;
         this.mean = mean;
         next = null;
