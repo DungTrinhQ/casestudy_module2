@@ -162,13 +162,13 @@ public class Dictionary {
     }
 
     public void use() {
-        System.out.println("TỪ ĐIỂN ANH-ĐÔNG LÀO");
-        System.out.println("====================");
-        System.out.println("Menu:");
-        System.out.println("1. Dịch");
-        System.out.println("2. Thêm từ");
-        System.out.println("3. Xóa từ");
-        System.out.println("4. Thoát");
+        System.out.println("THUẬT NGỮ TIẾNG ANH CHUYÊN NGÀNH CNTT");
+        System.out.println("=====================================");
+        System.out.println("----------------MENU-----------------");
+        System.out.println("1. Dịch:   translate_<word>");
+        System.out.println("2. Thêm từ:    add_<word>_<mean>");
+        System.out.println("3. Xóa từ:    delete_<word>");
+        System.out.println("4. Thoát:    quit");
     }
 
 }

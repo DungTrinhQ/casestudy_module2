@@ -3,44 +3,38 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Dictionary dict = new Dictionary();
+
+        Scanner input = new Scanner(System.in);
+        String command = new String();
+        String[] commands = new String[3];
+
         dict.loadDict("C:\\CodeGym\\Dictionary\\Dict.txt");
         dict.use();
-        Scanner input = new Scanner(System.in);
-        String choice;
         do {
+            System.out.println("Nhập câu lệnh theo định dạng trên các lựa chọn: ");
             System.out.print("> ");
-            System.out.println("Nhập số để chọn yêu cầu:");
-            choice = input.next();
-            switch (choice) {
-                case "1":
-                    System.out.println("Nhập từ cần dịch: ");
-                    String word1 = input.next();
-                    dict.tranSlate(word1);
+            command = input.nextLine();
+            commands = command.split("_", 3);
+
+            switch (commands[0]) {
+                case "translate":
+                    dict.tranSlate(commands[1]);
+                    break;
+                case "add":
+                    dict.add(commands[1], commands[2]);
                     dict.save("C:\\CodeGym\\Dictionary\\Dict.txt");
                     break;
-                case "2":
-                    System.out.println("Nhập từ cần thêm: ");
-                    String word2 = input.next();
-                    System.out.println("Nhập nghĩa của từ cần: ");
-                    String mean = input.next();
-                    dict.add(word2, mean);
+                case "delete":
+                    dict.delete(commands[1]);
                     dict.save("C:\\CodeGym\\Dictionary\\Dict.txt");
                     break;
-                case "3":
-                    System.out.println("Nhập từ muốn xóa: ");
-                    String word3 = input.next();
-                    dict.delete(word3);
-                    dict.save("C:\\CodeGym\\Dictionary\\Dict.txt");
-                    break;
-                case "4":
+                case "quit":
                     System.out.println("Cảm ơn bạn đã sử dụng chương trình");
                     break;
                 default:
-                    System.out.println("Error!");
+                    System.out.println("Lỗi!");
             }
-        } while (choice.equals("4") == false);
-
+        } while (commands[0].equals("quit") == false);
         input.close();
     }
-
 }

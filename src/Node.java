@@ -11,8 +11,7 @@ public class Node {
     }
 
     public void concatMean(String concatMean) {
-        String mean = String
-                .format("%s, %s", this.mean, concatMean);
+        String mean = String.format("%s, %s", this.mean, concatMean);
         this.mean = mean;
     }
 

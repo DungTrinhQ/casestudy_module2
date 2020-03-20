@@ -1,17 +1,148 @@
-an: một
-name: tên
-fifteen: mười lăm
-fifty: năm mươi
-bag: cái cặp
-book: quyển sách
-box: cái hộp
-cat: con mèo
-close: đóng
+OSI: Là chữ viết tắt của “Open System Interconnection”, hay còn gọi là mô hình chuẩn OSI
+PPP: Là chữ viết tắt của “Point-to-Point Protocol”. Đây là một giao thức kết nối Internet tin cậy thông qua Modem
+abacus: bàn tính
+abbreviation: sự tóm tắt, rút gọn
+accumulator: tổng
+addition: phép cộng
+address: địa chỉ
+allocate: phân phối
+alphabetical catalog: Mục lục xếp theo trật tự chữ cái
+alphanumeric data: dữ liệu chữ số, dữ liệu cấu thành các chữ cái và bất kỳ chữ số từ 0 đến 9
+analog: tương tự
+analysis: phân tích
+appliance: thiết bị, máy móc
+application: ứng dụng
+appropriate: thích hợp
+arise: xuất hiện, nảy sinh
+arithmetic: số học
+authority work: Công tác biên mục (tạo ra các điểm truy cập) đối với tên, tựa đề hay chủ đề; riêng đối với biên mục tên và nhan đề, quá trình này bao gồm xác định tất cả các tên hay tựa đề và liên kết các tên/tựa đề không được chọn với tên/tựa đề được chọn làm điểm truy dụng. Đôi khi quá trình này cũng bao gồm liên kết tên và tựa đề với nhau
+available: dùng được, có hiệu lực
+background: bối cảnh, bổ trợ
+binary: Nhị phân, thuộc về nhị phân
+broad classification: Phân loại tổng quát
+capability: khả năng
+cataloging: Công tác biên mục. Nếu làm trong các tổ chức phi lợi nhuận thì gọi là cataloging, nếu làm vì mục đích thương mại thì gọi là indexing
+certification: giấy chứng nhận
+chain: chuỗi
+chief: giám đốc
+chief source of information: Nguồn thông tin chính. Dùng tạo ra phần mô tả của một biểu ghi thay thế như trang bìa sách, hình nhan đề phim hoạt hình hay nhãn băng đĩa.
+circuit: mạch
+clarify: Làm cho trong sáng dễ hiểu
+cluster controller: Bộ điều khiển trùm
+command: lệnh(trong máy tính)
+commmon: thông thường
+compatible: tương thích
+complex: phức tạp
+component: thành phần
 computer: máy tính
-dog: con chó
-mouse: con chuột
-smartphone: điện thoại thông minh
-snow: tuyết
-win: chiến thắng
-window: cửa sổ
-water: nước
+computerize: tin học hóa
+configuration: cấu hình
+consultant: cố vấn, chuyên viên tham vấn
+convenience convenience: thuận tiện
+convert: chuyển đổi
+customer: khách hầng
+data: dữ liệu
+database: cơ sở dữ liệu
+deal: giao dịch
+decision: quyết định
+demand: yêu cầu
+demmagnetize: khử từ hóa
+dependable: có thể tin cậy được
+detailed: chi tiết
+develop: phát triển
+device: thiết bị
+devise: phát minh
+digital: số, thuộc về số
+disk: đĩa
+division: phép chia
+drawback: trở ngại, hạn chế
+effective: có hiệu lực
+efficient: có hiệu suất cao
+employ: thuê ai làm gì
+enterprise: tập đoàn, công ty
+environment: môi trường
+equipment: thiết bị
+expertise: thành thạo, tinh thông
+eyestrain: mỏi mắt
+ferrite ring: vòng nhiễm từ
+gadget: đồ phụ tùng nhỏ
+gateway: Cổng kết nối Internet cho những mạng lớn
+goal: mục tiêu
+graphics: đồ họa
+hardware: phần mềm
+implement: công cụ, phương tiện
+increase: sự tăng thêm, tăng lên
+individual: cá nhân, cá thể
+inertia: quán tính
+install: cài đặt
+instruction: chỉ thị, chỉ dẫn
+insurance: bảo hiểm
+integrate: hợp nhất, sáp nhập
+intranet: mạng nội bộ
+irregularity: Sự bất thường, không theo quy tắc
+latest: mới nhất
+leadership: lãnh đạo
+level with someone: thành thật
+low: yếu, chậm
+maintain: duy trì
+matrix: ma trận
+memory: bộ nhớ
+microprocessor: bộ vi xử lý
+minicomputer: máy tính mini
+monitor: giám sát
+multi-task: đa nhiệm
+multi-user: đa người dùng
+multiplication: phép nhân
+negotiate: thương lượng
+numeric: số học
+occur: xảy ra, xảy đến
+operating system: hệ điều hành
+operation: thao tác
+order: yêu cầu
+output: ra, đưa ra
+oversee: quan sát
+packet: Gói dữ liệu
+perform: Tiến hành, thi hành
+pinpoint: Chỉ ra một cách chính xác
+port: Cổng
+prevail: thịnh hành, phổ biến
+priority: sự ưu tiên
+process: quá trình, tiến triển, xử lý
+productivity: hiệu suất
+protocol: giao thức
+provide: cung cấp
+pulse: xung
+quality: chất lượng
+quantity: số lượng
+rapid: nhanh chóng
+real-time: thời gian thực
+remote: từ xa
+remote access: Truy cập từ xa qua mạng
+replace: thay thế
+research: nghiên cứu
+resource: nguồn
+respond: phản hồi
+ribbon: dải băng
+schedule: Lập lịch, lịch biểu
+signal: tín hiệu
+similar: giống
+simultaneous: đồng thời
+solution: Giải pháp, lời giải
+solve: giải quyết
+source code: Mã nguồn
+storage: lưu trữ
+store: lưu trữ
+subject entry: công cụ truy cập thông qua chủ đề của ấn phẩm
+substantial: tính thực tế
+subtraction: phép trừ
+sufficient: đủ, có khả năng
+suitable: phù hợp
+switch: chuyển
+tape: Ghi  băng, băng
+technical: thuộc về ký thuật
+technology: công nghệ
+terminal: máy trạm
+text: văn bản chỉ bao gồm kí tự
+tiny: nhỏ bé
+transmit: truyền
+union catalog: Mục lục liên hợp. Thư mục thể hiện những tài liệu ở nhiều thư viện hay kho tư
